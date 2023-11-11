@@ -1,9 +1,11 @@
 package dev.efekos.classes.api.event;
 
+import dev.efekos.classes.api.i.ILevelCriteria;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class CriteriaCheckEvent extends Event implements Cancellable {
     public static final HandlerList handlers = new HandlerList();
@@ -50,7 +52,7 @@ public class CriteriaCheckEvent extends Event implements Cancellable {
         return mainEvent;
     }
 
-    @NotNull
+    @NonNull
     @Override
     public HandlerList getHandlers() {
         return handlers;
