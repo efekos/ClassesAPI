@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"dev.efekos.classes.api.event"},{"l":"dev.efekos.classes.api.i"},{"l":"dev.efekos.classes.api.registry"}];updateSearchResults();
