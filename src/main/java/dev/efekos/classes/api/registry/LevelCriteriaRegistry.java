@@ -10,6 +10,10 @@ import java.util.Map;
 public class LevelCriteriaRegistry implements IRegistry<ILevelCriteria> {
     private final Map<NamespacedKey, ILevelCriteria> perks = new HashMap<>();
 
+    /**
+     * Returns every level criteria registered.
+     * @return All the level criterias in a map.
+     */
     public Map<NamespacedKey, ILevelCriteria> getAll() {
         return perks;
     }

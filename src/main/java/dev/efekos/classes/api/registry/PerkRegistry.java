@@ -10,6 +10,10 @@ import java.util.Map;
 public final class PerkRegistry implements IRegistry<IPerk> {
     private final Map<NamespacedKey, IPerk> perks = new HashMap<>();
 
+    /**
+     * Returns every perk registered.
+     * @return All the perks in a map.
+     */
     public Map<NamespacedKey, IPerk> getAll() {
         return perks;
     }

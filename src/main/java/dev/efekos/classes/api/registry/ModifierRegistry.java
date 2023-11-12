@@ -11,6 +11,10 @@ import java.util.Map;
 public final class ModifierRegistry implements IRegistry<IModifier> {
     private final Map<NamespacedKey, IModifier> modifier = new HashMap<>();
 
+    /**
+     * Returns every modifier registered.
+     * @return All the modifiers in a map.
+     */
     public Map<NamespacedKey, IModifier> getAll() {
         return modifier;
     }
