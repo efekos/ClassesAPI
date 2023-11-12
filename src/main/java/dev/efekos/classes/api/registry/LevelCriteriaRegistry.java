@@ -3,10 +3,15 @@ package dev.efekos.classes.api.registry;
 import dev.efekos.classes.api.i.ILevelCriteria;
 import dev.efekos.classes.api.i.IRegistry;
 import org.bukkit.NamespacedKey;
+import org.bukkit.Server;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Main registry used for level criterias. Works as a server service. You can use
+ * {@link org.bukkit.plugin.ServicesManager#getRegistration(Class)} to get the service created by Classes
+ */
 public class LevelCriteriaRegistry implements IRegistry<ILevelCriteria> {
     private final Map<NamespacedKey, ILevelCriteria> perks = new HashMap<>();
 

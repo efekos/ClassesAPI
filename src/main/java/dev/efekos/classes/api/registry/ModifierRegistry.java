@@ -8,6 +8,10 @@ import javax.management.openmbean.KeyAlreadyExistsException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Main registry used for modifiers. Works as a server service. You can use
+ * {@link org.bukkit.plugin.ServicesManager#getRegistration(Class)} to get the service created by Classes
+ */
 public final class ModifierRegistry implements IRegistry<IModifier> {
     private final Map<NamespacedKey, IModifier> modifier = new HashMap<>();
 

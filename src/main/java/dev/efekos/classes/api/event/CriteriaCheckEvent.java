@@ -42,6 +42,7 @@ public class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Constructs a new event.
+     * @param isAsync Is this event going to be asynchronous?
      * @param player Player that is about to get class exp.
      * @param criteria Criteria of the class player is in.
      * @param mainEvent Main event that caused this event to be called.
@@ -54,6 +55,7 @@ public class CriteriaCheckEvent extends Event implements Cancellable {
     }
 
     /**
+     * Returns the main player of this event.
      * @return Main player that is about to earn class exp.
      */
     public Player getPlayer() {
@@ -73,6 +75,7 @@ public class CriteriaCheckEvent extends Event implements Cancellable {
     }
 
     /**
+     * Returns the criteria that player should meet for Class exp.
      * @return Criteria of the class that player is in.
      */
     public ILevelCriteria getCriteria() {

@@ -7,6 +7,10 @@ import org.bukkit.NamespacedKey;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Main registry used for perks. Works as a server service. You can use
+ * {@link org.bukkit.plugin.ServicesManager#getRegistration(Class)} to get the service created by Classes
+ */
 public final class PerkRegistry implements IRegistry<IPerk> {
     private final Map<NamespacedKey, IPerk> perks = new HashMap<>();
 
