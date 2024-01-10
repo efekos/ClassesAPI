@@ -16,6 +16,7 @@ public final class PerkRegistry implements IRegistry<IPerk> {
 
     /**
      * Returns every perk registered.
+     *
      * @return All the perks in a map.
      */
     public Map<NamespacedKey, IPerk> getAll() {
@@ -24,14 +25,14 @@ public final class PerkRegistry implements IRegistry<IPerk> {
 
     @Override
     public <T extends IPerk> T register(NamespacedKey key, T object) {
-        perks.put(key,object);
+        perks.put(key, object);
         return object;
     }
 
     @Override
     public NamespacedKey idOf(IPerk object) {
         for (NamespacedKey key : perks.keySet()) {
-            if(perks.get(key).equals(object)) return key;
+            if (perks.get(key).equals(object)) return key;
         }
         return null;
     }

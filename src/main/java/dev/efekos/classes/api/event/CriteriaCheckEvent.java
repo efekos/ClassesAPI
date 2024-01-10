@@ -29,8 +29,9 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Constructs a new event.
-     * @param player Player that is about to get class exp.
-     * @param criteria Criteria of the class player is in.
+     *
+     * @param player    Player that is about to get class exp.
+     * @param criteria  Criteria of the class player is in.
      * @param mainEvent Main event that caused this event to be called.
      */
     public CriteriaCheckEvent(Player player, ILevelCriteria criteria, Event mainEvent) {
@@ -42,9 +43,10 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Constructs a new event.
-     * @param isAsync Is this event going to be asynchronous?
-     * @param player Player that is about to get class exp.
-     * @param criteria Criteria of the class player is in.
+     *
+     * @param isAsync   Is this event going to be asynchronous?
+     * @param player    Player that is about to get class exp.
+     * @param criteria  Criteria of the class player is in.
      * @param mainEvent Main event that caused this event to be called.
      */
     public CriteriaCheckEvent(boolean isAsync, Player player, ILevelCriteria criteria, Event mainEvent) {
@@ -56,6 +58,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Returns the main player of this event.
+     *
      * @return Main player that is about to earn class exp.
      */
     public Player getPlayer() {
@@ -76,6 +79,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Returns the criteria that player should meet for Class exp.
+     *
      * @return Criteria of the class that player is in.
      */
     public ILevelCriteria getCriteria() {
@@ -84,6 +88,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Returns the main event that caused this event to be called.
+     *
      * @return The main event.
      */
     public Event getMainEvent() {
@@ -96,7 +101,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
         return handlers;
     }
 
-    public static HandlerList getHandlerList(){
+    public static HandlerList getHandlerList() {
         return handlers;
     }
 }

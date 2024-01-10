@@ -17,6 +17,7 @@ public final class ModifierRegistry implements IRegistry<IModifier> {
 
     /**
      * Returns every modifier registered.
+     *
      * @return All the modifiers in a map.
      */
     public Map<NamespacedKey, IModifier> getAll() {
@@ -26,15 +27,16 @@ public final class ModifierRegistry implements IRegistry<IModifier> {
     @Override
     public NamespacedKey idOf(IModifier object) {
         for (NamespacedKey key : modifier.keySet()) {
-            if(modifier.get(key).equals(object)) return key;
+            if (modifier.get(key).equals(object)) return key;
         }
         return null;
     }
 
     @Override
     public <T extends IModifier> T register(NamespacedKey key, T object) {
-        if(modifier.containsKey(key))throw new KeyAlreadyExistsException("A modifier called "+key.toString()+" already exists.");
-        modifier.put(key,object);
+        if (modifier.containsKey(key))
+            throw new KeyAlreadyExistsException("A modifier called " + key.toString() + " already exists.");
+        modifier.put(key, object);
         return object;
     }
 
