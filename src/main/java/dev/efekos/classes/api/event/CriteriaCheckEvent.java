@@ -15,14 +15,20 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
 
     /**
      * Main player that is about to earn class exp.
+     *
+     * @since 1.0
      */
     private final Player player;
     /**
      * Criteria that player has.
+     *
+     * @since 1.0
      */
     private final ILevelCriteria criteria;
     /**
      * Main event that caused this event to be called. Can be any event that is something about a player did, usually {@link org.bukkit.event.player.PlayerEvent}s.
+     *
+     * @since 1.0
      */
     private final Event mainEvent;
 
@@ -33,6 +39,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
      * @param player    Player that is about to get class exp.
      * @param criteria  Criteria of the class player is in.
      * @param mainEvent Main event that caused this event to be called.
+     * @since 1.0
      */
     public CriteriaCheckEvent(Player player, ILevelCriteria criteria, Event mainEvent) {
         this.player = player;
@@ -48,6 +55,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
      * @param player    Player that is about to get class exp.
      * @param criteria  Criteria of the class player is in.
      * @param mainEvent Main event that caused this event to be called.
+     * @since 1.0
      */
     public CriteriaCheckEvent(boolean isAsync, Player player, ILevelCriteria criteria, Event mainEvent) {
         super(isAsync);
@@ -60,6 +68,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
      * Returns the main player of this event.
      *
      * @return Main player that is about to earn class exp.
+     * @since 1.0
      */
     public Player getPlayer() {
         return player;
@@ -81,6 +90,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
      * Returns the criteria that player should meet for Class exp.
      *
      * @return Criteria of the class that player is in.
+     * @since 1.0
      */
     public ILevelCriteria getCriteria() {
         return criteria;
@@ -90,6 +100,7 @@ public final class CriteriaCheckEvent extends Event implements Cancellable {
      * Returns the main event that caused this event to be called.
      *
      * @return The main event.
+     * @since 1.0
      */
     public Event getMainEvent() {
         return mainEvent;

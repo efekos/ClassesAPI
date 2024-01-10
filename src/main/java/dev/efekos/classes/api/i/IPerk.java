@@ -13,6 +13,7 @@ public interface IPerk {
      *
      * @param player Player that is in a class with this perk.
      * @param level  Class level of the player in that class.
+     * @since 1.0
      */
     void grant(Player player, int level);
 
@@ -21,6 +22,7 @@ public interface IPerk {
      * when the player leaves his class.
      *
      * @param player Player that just leaved his class.
+     * @since 1.0
      */
     void degrade(Player player);
 
@@ -35,6 +37,7 @@ public interface IPerk {
      * @param level Class level of the player that will see this. If player is not in the class that contains this
      *              modifier, then 0.
      * @return A description for this perk.
+     * @since 1.0
      */
     String getDescription(int level);
 }

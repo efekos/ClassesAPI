@@ -14,6 +14,7 @@ public interface IRegistry<T> {
      * @param key    Key of the object to register.
      * @param object Object that you want to register.
      * @param <K>    A type that extends or is {@link T}.
+     * @since 1.0
      * @return The registered object.
      */
     <K extends T> K register(NamespacedKey key, K object);
@@ -23,6 +24,7 @@ public interface IRegistry<T> {
      *
      * @param key Key of the object you want.
      * @return Object that was found using the key.
+     * @since 1.0
      */
     T get(NamespacedKey key);
 
@@ -31,6 +33,7 @@ public interface IRegistry<T> {
      *
      * @param object An object to find its key.
      * @return A key if found, {@code null} otherwise.
+     * @since 1.0
      */
     NamespacedKey idOf(T object);
 }

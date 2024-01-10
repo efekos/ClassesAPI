@@ -18,6 +18,7 @@ public final class PerkRegistry implements IRegistry<IPerk> {
      * Returns every perk registered.
      *
      * @return All the perks in a map.
+     * @since 1.0
      */
     public Map<NamespacedKey, IPerk> getAll() {
         return perks;

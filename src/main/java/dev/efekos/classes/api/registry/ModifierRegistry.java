@@ -18,6 +18,7 @@ public final class ModifierRegistry implements IRegistry<IModifier> {
     /**
      * Returns every modifier registered.
      *
+     * @since 1.0
      * @return All the modifiers in a map.
      */
     public Map<NamespacedKey, IModifier> getAll() {

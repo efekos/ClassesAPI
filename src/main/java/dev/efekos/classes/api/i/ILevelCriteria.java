@@ -11,6 +11,7 @@ public interface ILevelCriteria {
      *
      * @param event Main event that caused this method to be executed, probably through a {@link dev.efekos.classes.api.event.CriteriaCheckEvent}.
      * @return {@code true} if all the conditions are met.
+     * @since 1.0
      */
     boolean shouldGiveExp(Event event);
 }

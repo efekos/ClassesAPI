@@ -18,6 +18,7 @@ public final class LevelCriteriaRegistry implements IRegistry<ILevelCriteria> {
      * Returns every level criteria registered.
      *
      * @return All the level criterias in a map.
+     * @since 1.0
      */
     public Map<NamespacedKey, ILevelCriteria> getAll() {
         return perks;

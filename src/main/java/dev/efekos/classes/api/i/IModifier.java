@@ -16,6 +16,7 @@ public interface IModifier {
      *               as the main value of effects. For example: most of the modifiers added by Classes is an attribute
      *               modifier that just changes an attribute of the player. They use this value parameter instead of
      *               static values.
+     * @since 1.0
      */
     void apply(Player player, int level, double value);
 
@@ -24,6 +25,7 @@ public interface IModifier {
      * leaved his class.
      *
      * @param player Player that was in a class with this modifier.
+     * @since 1.0
      */
     void deapply(Player player);
 
@@ -39,6 +41,7 @@ public interface IModifier {
      *              modifier, then 0.
      * @param value Value of this modifier in the class that contains this modifier.
      * @return A description for this modifier.
+     * @since 1.0
      */
     String getDescription(int level, double value);
 
@@ -48,6 +51,7 @@ public interface IModifier {
      * @param level Class level of the player that will receive this information.
      * @param value Value of this modifier that was given by the class that player is in.
      * @return Whether is this modifier positive.
+     * @since 1.0
      */
     boolean isPositive(int level, double value);
 }
