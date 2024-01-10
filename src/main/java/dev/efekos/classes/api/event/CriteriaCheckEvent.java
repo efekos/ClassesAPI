@@ -10,7 +10,7 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 /**
  * An event called by Classes plugin, whenever someone is about to get class exp.
  */
-public class CriteriaCheckEvent extends Event implements Cancellable {
+public final class CriteriaCheckEvent extends Event implements Cancellable {
     public static final HandlerList handlers = new HandlerList();
 
     /**
