@@ -13,6 +13,12 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>rep</id>
+            <url>file://C:/EfekosDev/Maven</url>
+        </repository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>jitpack</id>
