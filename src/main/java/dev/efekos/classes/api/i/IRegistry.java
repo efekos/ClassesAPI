@@ -14,8 +14,8 @@ public interface IRegistry<T> {
      * @param key    Key of the object to register.
      * @param object Object that you want to register.
      * @param <K>    A type that extends or is {@link T}.
-     * @since 1.0
      * @return The registered object.
+     * @since 1.0
      */
     <K extends T> K register(NamespacedKey key, K object);
 
